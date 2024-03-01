@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   direction: rtl;
   font-family: "cairo";
@@ -35,7 +36,9 @@ body {
   border: none;
   color: var(--color) !important;
 }
-
+.navbar-toggler{
+  background-color: #fff;
+}
 .navbar-brand {
   background: #ffff;
   border-radius: 5px;
@@ -640,4 +643,37 @@ padding: 14px 30px 20px;
 
 .defaultPadding{
  padding: 14px 30px 20px ;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  
+  .fixed-top {
+    margin: 5px 0px !important;
+    max-width: 90% !important;
+  }
+  .gallery > img {
+    width: 200px !important;
+  }
+  .contacts h4{
+    font-size: 16px !important;
+  }
+  .items {
+    width: 200px;
+    height: 550px;
+  }
+  #price p {
+    width: auto; 
+  }
+  .elementor-icon-box-description {
+    font-size: 16px;
+    width: 150px;
+  }
+  #type .itemType h3 {
+    font-size: 18px;
+    width: 150px;
+  }
+  .boxing {
+    height: 350px;
+    width: 200px;
+  } 
 }
