@@ -711,4 +711,11 @@ padding: 14px 30px 20px;
     width: 275px;
     margin: 32px;
   }
+  #price h6 {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+  #priceId{
+    padding: 10px !important;
+  }
 }
