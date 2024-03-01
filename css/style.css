@@ -670,7 +670,7 @@ padding: 14px 30px 20px;
   }
   .fixed-top {
     margin: 0px 0px !important;
-    max-width: 90% !important;
+    max-width: 100% !important;
   }
   .gallery > img {
     width: 200px !important;
