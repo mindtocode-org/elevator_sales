@@ -686,22 +686,29 @@ padding: 14px 30px 20px;
   }
   .elementor-icon-box-description {
     font-size: 16px;
-    width: 150px;
+    
   }
   #type .itemType h3 {
     font-size: 18px;
-    width: 150px;
+
+  }
+  .elementor-icon-box-title{
+    margin: 10px !important;
   }
   .boxing {
     height: 350px;
     width: 200px;
     margin: auto;
   } 
+  footer{
+    text-align: center !important;
+  }
   footer .img-foot {
-    margin: 10px;
+    margin: 20px auto;
   }
   .foot-link-info {
     margin: 10px;
+    display: contents;
   }
   .foot {
     margin: 10px;
@@ -717,4 +724,14 @@ padding: 14px 30px 20px;
   #priceId{
     padding: 10px !important;
   }
+  #workTeam .row{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #workTeam, #price , #contact {
+    padding: 20px !important;
+  }
+  .elementor-price-table__header {
+    padding: 20px 24px;
+   }
 }
