@@ -36,9 +36,9 @@ body {
   border: none;
   color: var(--color) !important;
 }
-.navbar-toggler{
+/* .navbar-toggler{
   background-color: #fff;
-}
+} */
 .navbar-brand {
   background: #ffff;
   border-radius: 5px;

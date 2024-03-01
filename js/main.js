@@ -2,6 +2,7 @@
 $("body").css("paddingTop", $(".navber").innerHeight() + 100);
 $(".navbar .nav-jquery a").click(function (e) {
   e.preventDefault();
+  $(".navbar-collapse").removeClass("show")
   $("html , body").animate({
     scrollTop: $("#" + $(this).data("scroll")).offset().top,
   });
