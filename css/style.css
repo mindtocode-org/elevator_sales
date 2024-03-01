@@ -678,10 +678,7 @@ padding: 14px 30px 20px;
   .contacts h4{
     font-size: 16px !important;
   }
-  .items {
-    width: 200px;
-    height: 550px;
-  }
+  
   #price p {
     width: auto; 
   }
