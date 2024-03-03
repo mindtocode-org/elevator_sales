@@ -1142,7 +1142,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script>
-      emailjs.init("8vPA9ETRUJ4WvbL_3");
+      // emailjs.init("8vPA9ETRUJ4WvbL_3");
       function sendEmail() {
         // Define variables
         let sender = document.getElementById("name").value;
@@ -1180,9 +1180,19 @@
         //  phone: document.getElementById("phone").value,
         // };
         console.log("Email sent successfully:", formData);
-
+        // emailjs.send("service_rmizkpn", "template_b898xx4", formData)
         // Send email using email.js
-        emailjs.send("service_rmizkpn", "template_b898xx4", formData).then(
+        const apiUrl =
+        "http://elvatorapp-001-site1.btempurl.com/api/ContactUs/sendEmail";
+        fetch(apiUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            accept: "text/plain",
+          },
+          body: JSON.stringify(formData),
+        })
+        .then(
           function (response) {
             console.log("Email sent successfully:", response);
 
@@ -1210,10 +1220,16 @@
               text: "Failed to send email. Please try again.",
             });
 
-            // You can handle errors here
+            
           }
         );
         }
+      
+       
+    
+    
+    
+  
     </script>
   </body>
 </html>
