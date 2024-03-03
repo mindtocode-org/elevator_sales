@@ -1151,18 +1151,12 @@
         let messageContent = document.getElementById("message").value;
 
         // Concatenate the example string with variables
-        var concatenatedString =
-          "المرسل : " +
-          sender +
-          "\n" +
-          "الميل : " +
-          email +
-          "\n" +
-          "رقم الهاتف : " +
-          phoneNumber +
-          "\n" +
-          "محتوي الرساله\n" +
-          messageContent;
+       
+          var concatenatedString = `المرسل : ${sender}
+            الميل : ${email}
+            رقم الهاتف : ${phoneNumber}
+            محتوي الرساله
+            ${messageContent}`;
         const formData = {
           subject: document.getElementById("select").value,
           body: concatenatedString,
