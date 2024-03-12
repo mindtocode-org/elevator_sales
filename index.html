@@ -1189,20 +1189,28 @@
         .then(
           function (response) {
             console.log("Email sent successfully:", response);
-
-    
-            // Show SweetAlert for successful submission
-            Swal.fire({
+            if(response.status === 200){
+              // Show SweetAlert for successful submission
+              Swal.fire({
               icon: "success",
               title: "تم الارسال",
               text: `شكرا لك علي تواصلك يا ${document.getElementById("name").value}`,
             });
              // Reset the form after successful submission
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            document.getElementById("phone").value = "";
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+              document.getElementById("phone").value = "";
             // You can add further actions on success
+            }else {
+              Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: "Failed to send email. Please try again.",
+            });
+            }
+    
+            
           },
           function (error) {
             console.error("Error sending email:", error);
