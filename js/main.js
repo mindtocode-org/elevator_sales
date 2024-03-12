@@ -70,7 +70,7 @@ function addComplaints() {
   console.log("Form Data:", formData);
 
   const apiUrl =
-    "http://elvatorapp-001-site1.btempurl.com/api/Complaints/create";
+    "https://brave-ritchie.216-158-236-18.plesk.page/api/Complaints/create";
 
   fetch(apiUrl, {
     method: "POST",
@@ -135,7 +135,7 @@ function submitOrder(event) {
     facilityNotes: document.getElementById("facilityNotes").value,
   };
   const apiUrl =
-    "http://elvatorapp-001-site1.btempurl.com/api/IntegrationOrders/create";
+    "https://brave-ritchie.216-158-236-18.plesk.page/api/IntegrationOrders/create";
 
   fetch(apiUrl, {
     method: "POST",
