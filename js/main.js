@@ -117,8 +117,10 @@ function submitOrder(event) {
     phone: document.getElementById("phone").value,
     idNumber: document.getElementById("idNumber").value,
     city: document.getElementById("city").value,
+    numberOfElevators: document.getElementById("numberOfElevators").value,
     address: document.getElementById("address").value,
     facilityType: document.getElementById("facilityType").value,
+    productType: document.getElementById("productType").value,
     elevatorType: document.getElementById("elevatorType").value,
     machineType: document.getElementById("machineType").value,
     doorType: document.getElementById("doorType").value,
@@ -133,6 +135,7 @@ function submitOrder(event) {
     clientNotes: document.getElementById("clientNotes").value,
     price: document.getElementById("priceID").value,
     facilityNotes: document.getElementById("facilityNotes").value,
+
   };
   const apiUrl =
     "https://brave-ritchie.216-158-236-18.plesk.page/api/IntegrationOrders/create";
