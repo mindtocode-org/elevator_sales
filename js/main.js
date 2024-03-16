@@ -70,7 +70,7 @@ function addComplaints() {
   console.log("Form Data:", formData);
 
   const apiUrl =
-    "https://brave-ritchie.216-158-236-18.plesk.page/api/Complaints/create";
+    "https://unruffled-williamson.216-158-236-18.plesk.page/api/Complaints/create";
 
   fetch(apiUrl, {
     method: "POST",
@@ -138,7 +138,7 @@ function submitOrder(event) {
 
   };
   const apiUrl =
-    "https://brave-ritchie.216-158-236-18.plesk.page/api/IntegrationOrders/create";
+    "https://unruffled-williamson.216-158-236-18.plesk.page/api/IntegrationOrders/create";
 
   fetch(apiUrl, {
     method: "POST",
